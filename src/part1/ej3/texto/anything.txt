@@ -1,0 +1,46 @@
+Producto implements comparable<Producto>
+	- String nombre;
+	- double precio;
+	
+	getters setters de todo
+	
+	constructors de ambas cosas
+	
+	equals de producto mediante el nombre
+	
+	compareTo(Producto prod):int
+	
+	
+	calcular(double cantProductos): double (precio*cantidad)
+	
+	
+	
+	Perecedero extends Producto
+	
+	int dias
+	
+	get set
+	
+	constructors
+	
+	
+	@override
+	calcular(double cantProductos): double (precio*cantidad) //si queda 3 dias precio se divide entre  2, si queda 2 divide entre 3, si queda 1 dia divie entre 4
+	
+	
+	NoPerecedero extends Producto
+	
+	
+	- String tipo
+	
+	get set
+	
+	constructors
+	
+	
+	
+	
+	
+	
+	
+	
