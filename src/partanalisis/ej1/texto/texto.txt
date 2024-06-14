@@ -1,0 +1,139 @@
+Clases
+
++Vehiculo implements Comparable<Vehiculo>
+
+
+	-marca:String
+	-modelo:String
+	-color:String
+	-matricula:String
+	//comprueba si el motor esta encendido
+	-encendido:boolean
+	-marcha:int
+	
+	
+	+Vehiculo(marca,modelo,color,matricula)
+	
+	
+	+getMarca: String
+	+getModelo:String
+	+getColor:String
+	+getMatricula:String
+	+isEncendido:boolean
+	+getMarcha:int
+	+getVelocidad:int
+	
+	+setColor(String):void
+	+setVelocidad(int):void
+	
+	+pararVehiculo():void	//apaga el motor
+	+arrancarVehiculo():void		//enciende el motor
+	
+	+subirMarcha():void 	//sube la marcha en funcion de la velocidad?
+	+bajarMarcha():void 	//baja la marcha en funcion de la velocidad
+	
+	@Override
+	+equals:boolean
+	
+	@Override
+	+toString:String
+	
+	//metodo de interfaz. Devuelve true 1/10 veces
+	@Override
+	cruzaGato():boolean
+	
+	
+	
+	+Turismo extends Vehiculo:
+		-Uso:enum {PROFESIONAL,PARTICULAR}
+		
+		-plazas: int
+		-tipoUso: Uso
+		
+		
+		+Turismo(marca,modelo,color,matricula,plazas,tipoUso)
+		
+		
+		
+		
+		+getPlazas:int
+		+getUso:String
+		
+		
+		+setUso(String):void
+		
+		@Override
+		+equals:boolean
+		
+		@Override
+		+toString:String
+		
+		
+		
+		
+	+Camion extends Vehiculo:
+	
+		-pesoMaximo: double
+		-peligroso: boolean
+		
+		
+		
+		+Camion(marca,modelo,color,matricula,pesoMaximo,peligroso)
+		
+		
+		
+		
+		+getPesoMaximo: double
+		+isPeligroso: boolean
+		
+		
+		
+		
+		@Override
+		+equals:boolean
+		
+		@Override
+		+toString:String
+		
+		
+		
+		
+		
+	
+	+Motocicleta extends Vehiculo:
+	
+		-cilindrada: int
+		-carnet: boolean
+		
+		
+		
+		+Motocicleta(marca,modelo,color,matricula,cilindrada,carnet)
+		
+		
+		
+		
+		+getCilindrada: int
+		+isCarnet: boolean
+		
+		
+		+setCilindrada(int):void //si isCarnet, entonces puede tener mas de 125cc
+		
+		@Override
+		+equals:boolean
+		
+		@Override
+		+toString:String
+		
+		
+		
+View
+
+	+Main:
+		
+		+main(args)
+		
+		+cruzaGato():boolean
+	
+	
+	
+	
