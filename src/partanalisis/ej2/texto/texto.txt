@@ -1,28 +1,110 @@
+Clases
 
-+ abstract class Ficha
+
++ abstract class Ficha implements Comparable<Ficha>
+	--atributos--
 	-id:int
 	-titulo:String
 	
-	//el constructor debe tener el 
+	--constructores--
 	+Ficha(id,titulo)
 	
 	
 	
-	+getId:int
-	+getTitulo:String
+	--getters setters--
+	+getId():int
+	+getTitulo():String
 	
 	
 	//en este caso, modificar una de las dos cosas puestas aqui no tiene sentido
 	
 	
-	+abstract prestamo:
 	
+	abstract prestamo():int //devuelve valor en funcion de las otras clases
+	
+	//to string equals y compare to
+	+toString():String
+	
+	abstract equals(Object obj):boolean
+	
+	+compareTo(Object obj):int
 	
 	
 	+ class Libro extends Ficha:
-		- nRevista
-		- anyoPub
+		--atributos--
+		-autor:String
+		-editorial:String
 		
 		
+		--constructores--
+		+Ficha(id,titulo,autor,editorial)
 		
+	
+		--getters setters--
+		+getAutor():int
+		+getEditorial():String
+		
+		//no tiene sentido cambiar el valor de alguna de las dos variables por lo tanto no hay setters
+		
+		--overrides--
+		+toString():String
+	
+		--abstractos--
+		abstract prestamo():int //devuelve 15
+		
+		+equals(Object obj):boolean
+		
+		
+	
+	+ class Revista extends Ficha:
+		--atributos--
+		-numRevista:int
+		-anyoPub:int
+		
+		
+		--constructores--
+		+Ficha(id,titulo,numRevista,anyoPub)
+		
+	
+		--getters setters--
+		+getNumRevista():int
+		+getAnyoPub():String
+		
+		//no tendria sentido cambiar alguna de las dos variables, por lo tanto no hay setters
+		
+		--overrides--
+		+toString():String
+	
+		--abstractos--
+		abstract prestamo():int //devuelve 10
+		
+		+equals(Object obj):boolean
+	
+	
+	+ class DVD extends Ficha:
+		--atributos--
+		-Tipo:enum(PELICULA,DOCUMENTAL,SERIE)
+		-anyo:int
+		-tipo:Tipo
+		
+		
+		--constructores--
+		+Ficha(id,titulo,anyo,tipo)
+		
+		
+	
+		--getters setters--
+		+getNumRevista():int
+		+getAnyoPub():String
+		
+		//no tiene sentido cambiar ninguna de las dos variables por lo tanto no hay setters
+		
+		--overrides--
+		+toString():String
+	
+		--abstractos--
+		abstract prestamo():int //devuelve 5
+		
+		+equals(Object obj):boolean
+	
 	
