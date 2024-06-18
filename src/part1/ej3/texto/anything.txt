@@ -40,7 +40,14 @@ Producto implements comparable<Producto>
 	
 	
 	
+Main:
+	+ int cantProd
+	+ Producto[] productos=new Producto[cantProd]
 	
-	
+	casos de 
+		Añadir producto.
+		Listar productos.
+		Eliminar producto.
+		Salir.
 	
 	
