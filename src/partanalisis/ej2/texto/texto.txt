@@ -1,0 +1,28 @@
+
++ abstract class Ficha
+	-id:int
+	-titulo:String
+	
+	//el constructor debe tener el 
+	+Ficha(id,titulo)
+	
+	
+	
+	+getId:int
+	+getTitulo:String
+	
+	
+	//en este caso, modificar una de las dos cosas puestas aqui no tiene sentido
+	
+	
+	+abstract prestamo:
+	
+	
+	
+	+ class Libro extends Ficha:
+		- nRevista
+		- anyoPub
+		
+		
+		
+	
